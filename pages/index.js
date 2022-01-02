@@ -59,21 +59,21 @@ export const data = {
     {
       label: "Active Users",
       data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-      backgroundColor: "rgba(255, 99, 132, 0.5)",
+      backgroundColor: "rgba(0, 137, 123, 0.5)",
     },
     {
       label: "Inactive Users",
       data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-      backgroundColor: "rgba(53, 162, 235, 0.5)",
+      backgroundColor: "rgba(30, 136, 229, 0.5)",
     },
   ],
 };
 
-const GREY = "#9E9E9E";
+const GREY = "#efefef";
 
 const styles = {
   card: {
-    boxShadow: `1px 3px 1px ${GREY}`,
+    boxShadow: `3px 3px 5px ${GREY}`,
   },
 };
 
