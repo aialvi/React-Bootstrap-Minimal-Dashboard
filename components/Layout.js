@@ -4,6 +4,13 @@ import Link from "next/link";
 
 import { Container, Nav, NavItem } from "reactstrap";
 
+const GREY = "#efefef";
+const styles = {
+  card: {
+    boxShadow: `3px 3px 10px ${GREY}`,
+  },
+};
+
 export default function Layout(props) {
   const title = "Welcome to Nextjs";
   return (
@@ -24,11 +31,11 @@ export default function Layout(props) {
         <style jsx>
           {`
             a {
-              color: white;
+              color: dark;
             }
           `}
         </style>
-        <Nav className="navbar navbar-dark bg-dark">
+        <Nav className="navbar" style={styles.card}>
           <NavItem>
             <Link href="/">
               <a className="navbar-brand">Home</a>
