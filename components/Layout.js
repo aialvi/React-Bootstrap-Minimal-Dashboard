@@ -38,7 +38,7 @@ export default function Layout(props) {
         <Nav className="navbar" style={styles.card}>
           <NavItem>
             <Link href="/">
-              <a className="navbar-brand">Home</a>
+              <a className="navbar-brand">Dashboard</a>
             </Link>
           </NavItem>
 
